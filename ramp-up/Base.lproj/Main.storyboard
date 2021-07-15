@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ramp PlacerVC-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="RampPlacerVC" customModule="ramp_up" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmK-1e-VXe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oc1-4p-YCh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </arscnView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7v-3j-DFT">
+                                        <rect key="frame" x="289" y="773" width="107" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="3db-b7-m4a"/>
+                                            <constraint firstAttribute="width" constant="107" id="Gf7-3I-atm"/>
+                                        </constraints>
+                                        <state key="normal" image="rampIcon"/>
+                                        <connections>
+                                            <action selector="rampBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="RJq-pH-40c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Oc1-4p-YCh" firstAttribute="top" secondItem="SmK-1e-VXe" secondAttribute="top" id="0jg-Eq-rA9"/>
+                                    <constraint firstItem="Oc1-4p-YCh" firstAttribute="leading" secondItem="SmK-1e-VXe" secondAttribute="leading" id="2vy-HZ-8lx"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="D7v-3j-DFT" secondAttribute="bottom" constant="10" id="GSp-gZ-0V7"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="D7v-3j-DFT" secondAttribute="trailing" constant="10" id="HGt-Fr-IFk"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oc1-4p-YCh" secondAttribute="bottom" id="YkB-H2-laM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oc1-4p-YCh" secondAttribute="trailing" id="woF-4c-caw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SmK-1e-VXe" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="6UY-Hk-KGj"/>
+                            <constraint firstAttribute="trailing" secondItem="SmK-1e-VXe" secondAttribute="trailing" id="Gge-Mx-aCc"/>
+                            <constraint firstAttribute="bottom" secondItem="SmK-1e-VXe" secondAttribute="bottom" id="tTs-ul-3Zt"/>
+                            <constraint firstItem="SmK-1e-VXe" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="tri-JW-RfY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rampIcon" width="107" height="71"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
